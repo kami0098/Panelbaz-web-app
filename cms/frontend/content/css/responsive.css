@@ -1,0 +1,49 @@
+@media screen and (max-width: 1200px) {
+
+    .services-add-categories input,
+    .services-add-product input,
+    .services-add-product select,
+    .services-add-new-service select,
+    .services-add-new-service input,
+    .services-add-new-service select, 
+    .services-add-new-service textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+
+    .admin-search-box-wrapper,
+    .dropbtn {
+        display: none;
+    }
+
+    .main-admin .admin-dashboard,
+    .main-admin .admin-header {
+        padding-right: 0;
+    }
+
+    .admin-menu {
+        width: 190px;
+        right: -190px;
+    }
+    .services-add-new-service > div {
+        flex-direction: column !important;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .services-add-new-service button {
+        width: 100%;
+    }
+
+    .login-page-form {
+        width: 100% !important;
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 360px) {}

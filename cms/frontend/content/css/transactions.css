@@ -1,0 +1,10 @@
+.show-user-infos-modal {
+    display: flex;
+    flex-direction: column;
+}
+.show-user-infos-modal input {
+    margin-top: 1rem;
+}
+.show-user-infos-modal > div {
+    text-align: center;
+}

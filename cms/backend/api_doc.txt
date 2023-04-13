@@ -1,0 +1,314 @@
+main_url = htpp://localhost:4000/api
+
+admin
+
+    1.Change admin info
+        
+        method: POST
+        url: main_url/admin-info/change-info/:AdminToken
+        body: {
+            content: {
+                firstname: ,
+                lastname: ,
+                email: ,
+                phone: ,
+                username: ,
+            }
+            files: {
+                file
+            }
+        }
+        response: admin info updated success or failure
+
+
+    2.Change admin passowrd
+
+        method: POST
+        url: main_url/admin-info/change-passowrd/:AdminToken
+        body: {
+            current_password: ,
+            new_password: ,
+            confirm_password: ,
+        }
+        response: admin passowrd changed success or failur
+
+
+----------------------------
+
+
+users
+
+    1.Get all user data
+
+        method: GET
+        url: main_url/admin-users/
+        response: all user data
+
+    1.Get user data by user id
+
+        method: GET
+        url: main_url/admin-users/user/:userID
+        response: user data
+    
+    3.Update user
+            
+        method: POST
+        url: main_url/admin-users/update/:userID
+        body: {
+            firstname: ,
+            lastname: ,
+            email: ,
+            username: ,
+            phone: ,
+            transactions_count: ,
+            tikets_count: ,
+            orders_count: ,
+            inventory: ,
+            amount: ,
+            date: ,
+        }
+        response: user info updated success or failure
+
+    4.Delete user by id
+
+        method: GET
+        url: main_url/admin-users/delete/:userID
+        response: delete user success or failure
+
+----------------------------
+
+
+dashbooard
+
+    1.Get users, tikets, orders, transactions data
+
+        method: GET
+        url: main_url/dashbooard
+        response: users, tikets, orders, transactions data
+
+
+----------------------------
+
+
+orders
+
+    1.Get all orders 
+
+        method: GET
+        url: main_url/admin-orders
+        response: orders data
+
+    2.Get order by id 
+
+        method: GET
+        url: main_url/admin-orders/order/:orderID
+        response: orders data
+
+    3.Edit order
+
+        method: POST
+        url: main_url/admin-orders/edit-order/:orderID
+        body: {
+            link: ,
+            count: ,
+            service_price: ,
+        }
+        response: edit order success or failure
+
+    4.Cancel order status
+        
+        method: GET
+        url: main_url/admin-orders/order-status/canceled/:orderID/:statusNumber
+        response: cancele order success or failure
+
+    5.Change order status
+
+        method: GET
+        url: main_url/admin-orders/order-status/:statusColumn/:orderID
+        response: change order success or failure
+
+    6.Get order status by order id
+
+        method: GET
+        url: main_url/admin-orders/order-get-status/:orderID
+        response: status order data 
+
+----------------------------
+
+
+services
+
+    1.Get all services, products, categories data 
+
+        method: GET
+        url: main_url/admin-services/services-data
+        response: services, products, categories data
+
+    2.Add new category
+
+        method: POST
+        url: main_url/admin-services/categories/add
+        body: {
+            title: ,
+            category_name: ,
+        }
+        response: add category success or failure
+
+    3.Remove category
+
+        method: GET
+        url: main_url/admin-services/categories/remove/:categoryID
+        response: removed category success or failure
+    
+    4.Add new product
+
+        method: POST
+        url: main_url/admin-services/products/add
+        body: {
+            title: ,
+            model: ,
+            categoryID: ,
+        }
+        response: add product success or failure
+
+    5.Remove product
+
+        method: GET
+        url: main_url/admin-services/products/remove/:productID
+        response: removed product success or failure
+
+
+    6.Add new service
+
+        method: POST
+        url: main_url/admin-services/services/add
+        body: {
+            categoryID: ,
+            productID: ,
+            title: ,
+            description: ,
+            order_complete_date: ,
+            price: ,
+            max: ,
+            min: ,
+        }
+        response: add service success or failure
+
+    7.Remove service
+
+        method: GET
+        url: main_url/admin-services/services/remove/:serviceID
+        response: removed service success or failure
+
+    8.Change active services
+
+        method: GET
+        url: main_url/admin-services/services/activate/:serviceID/:activateNumber
+        response: change service activate success or failure
+
+
+----------------------------
+
+
+tikets
+
+    1.Get all tikets data 
+
+        method: GET
+        url: main_url/admin-tikets/
+        response: tikets data
+
+    2.Edit tiket content
+
+        method: POST
+        url: main_url/admin-tikets/edit-tiket/:tiketID
+        body: {
+            content: ,
+        }
+        response: edit tiket success or failure
+    
+    3.Change activate tiket
+
+        method: POST
+        url: main_url/admin-tikets/isActive-tiket/:tiketID
+        body: {
+            is_Active: ,
+        }
+        response: change activate tiket success or failure
+
+    4.Submit answer tiket
+
+        method: POST
+        url: main_url/admin-tikets/answer-tiket/:tiketID
+        body: {
+            is_Active: ,
+        }
+        response: submit answer tiket success or failure
+
+----------------------------
+
+transactions
+
+    1.Get all transactions data 
+
+        method: GET
+        url: main_url/admin-transactions/
+        response: transactions data
+
+----------------------------
+
+
+register
+
+    1.login and auth admin
+
+        method: POST
+        url: main_url/admin-register/login
+        body: {
+            username: ,
+            password: ,
+        }
+        response: login success or failure
+
+    2.Get admin info by admin AdminToken
+
+        method: GET
+        url: main_url/admin-register/auth/:AdminToken
+        response: admin all infos
+
+----------------------------
+
+news
+
+    1.Get all news data
+
+        method: GET
+        url: main_url/admin-news/
+        response: news all data
+
+    2.News submit
+
+        method: POST
+        url: main_url/submit/:newsSubTarget
+        body: {
+            title: ,
+            content: ,
+
+        }
+        response: submit news success or failure
+
+    3.Edit news
+
+        method: POST
+        url: main_url/edit-news/:newsID
+        body: {
+            title: ,
+            content: ,
+        }
+        response: edit news success or failure
+
+    1.Get all news data
+
+        method: GET
+        url: main_url/remove-news/:newsID
+        response: remove news success or failure

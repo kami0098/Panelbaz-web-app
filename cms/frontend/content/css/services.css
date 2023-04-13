@@ -1,0 +1,69 @@
+.services-add-categories, .services-add-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    height: 18rem;
+}
+
+.services-add-categories input, .services-add-product input {
+    width: 45rem;
+}
+.services-add-categories button, .services-add-product button {
+    width: 15rem;
+
+}
+
+.services-add-product select, .services-add-new-service select {
+    width: 45rem;
+    border-radius: .5rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.services-add-new-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.services-add-new-service > div {
+    gap: 1rem;
+}
+.services-add-new-service  input{
+    width: 50rem;
+}
+
+.services-add-new-service textarea {
+
+}
+.services-add-new-service select {
+    width: 50rem;
+    margin-bottom: 1rem;
+}
+.services-add-new-service button {
+    margin-top: .4rem;
+    width: 30rem;
+}
+
+/* modal */
+
+.service-modal-details {
+    gap: .5rem;
+}
+.service-modal-details input {
+    width: 100%;
+}
+.service-modal-details textarea {
+    width: 100%;
+}
+.service-modal-details > div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}

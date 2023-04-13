@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="node_modules/tippy.js/dist/tippy.css">
+    <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet" href="content/css/responsive.css">
+    <link rel="icon" href="content/img/cropped-art-2-1-32x32 (1).png" sizes="32x32">
+    <title>پنل ادمین</title>
+</head>
+
+<body>
+
+    <div class="main-admin">
+        <!-- right side menu -->
+        <div class="admin-menu">
+            <div class="admin-menu-head">
+                <img src="content/img/hero-bg-1.png" class="admin-menu-head-logo" alt="menu-logo">
+                <h2 class="admin-menu-head-title">داشبورد ادمین</h2>
+            </div>
+            <div class="admin-menu-body">
+                <ul class="admin-menu-body-list">
+                    <li class="admin-menu-head-list-item active">
+
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-bar-chart" viewBox="0 0 16 16">
+                                <path
+                                    d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z" />
+                            </svg>
+
+                            <span>داشبورد</span>
+                        </a>
+                    </li>
+                    <li class="admin-menu-head-list-item" data-action="users">
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=users">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-people" viewBox="0 0 16 16">
+                                <path
+                                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                            </svg>
+                            <span>کاربران</span>
+                        </a>
+                    </li>
+                    <li class="admin-menu-head-list-item" data-action="services">
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=services">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-cart2" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                            </svg>
+
+                            <span>سرویس ها</span>
+                        </a>
+                    </li>
+                    <li class="admin-menu-head-list-item" data-action="orders">
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=orders">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+
+                            <span>سفارشات</span>
+                        </a>
+                    </li>
+                    <li class="admin-menu-head-list-item" data-action="tikets">
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=tikets">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-chat" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                            </svg>
+
+                            <span>تیکت ها</span>
+                        </a>
+                    </li>
+                    <li class="admin-menu-head-list-item" data-action="transactions">
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=transactions">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-wallet2" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+                            </svg>
+
+                            <span>تراکنشات</span>
+                        </a>
+                    </li>
+                    <li class="admin-menu-head-list-item" data-action="news">
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=news">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-chat-square-dots" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                <path
+                                    d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                            </svg>
+
+                            <span>ثبت خبر</span>
+                        </a>
+                    </li>
+
+                    <li class="admin-menu-head-list-item" data-action="admin-info">
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=admin-info">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-shield" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+                            </svg>
+
+                            <span>مشخصات ادمین</span>
+                        </a>
+                    </li>
+
+                    <li class="admin-menu-head-list-item" data-action="admin-exit">
+                        <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=admin-exit">
+
+                         
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                            </svg>
+                            
+
+                            <span>خروج</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- left side main dashboard -->
+        <div class="admin-dashboard">
+
+            <!-- header content -->
+            <header class="admin-header">
+
+                <div class="admin-navbar">
+
+                    <button class="admin-header-menu-btn flex-center">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="admin-header-toolbar">
+                        <div class="admin-search-box-wrapper">
+                            <input type="text" placeholder="جستجو .. ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </div>
+                        <div class="admin-header-alert flex-center position-relative me-3 me-md-0">
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                style="font-size: 1.1rem;">
+                                99+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                            </svg>
+                        </div>
+
+                        <div class="dropdown">
+                            <button onclick="dropdownFuncs()" class="dropbtn admin-header-info">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=admin-info">جزئیات
+                                    حساب</a>
+                                <a href="http://127.0.0.1:5500/cms/frontend/index.html?action=admin-exit">خروج</a>
+                            </div>
+                        </div>
+
+                        <img src="content/img/admin.jpg" class="admin-header-toolbar-logo" alt="admin-logo">
+                    </div>
+
+                </div>
+
+            </header>
+
+            <main class="main-dashboard">
+
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- edit user modal -->
+    <div class="modal fade" id="editUserModal" aria-hidden="true" aria-labelledby="editUserModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editUserModalLabel">مشاهده یا ویرایش کاربر</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="edit-user-modal-body">
+                        <div class="edit-user-modal-body-wrap">
+                            <div>
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-firstname-input">نام</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-firstname-input"
+                                        placeholder="نام">
+                                </div>
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-lastname-input">نام خانوادگی</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-lastname-input"
+                                        placeholder="نام خانوادگی">
+                                </div>
+
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-username-input">نام کاربری</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-username-input"
+                                        placeholder="نام کاربری">
+                                </div>
+
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-inventory-input">موجودی</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-inventory-input"
+                                        placeholder="موجودی">
+                                </div>
+
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-email-input">ایمیل</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-email-input"
+                                        placeholder="ایمیل">
+                                </div>
+
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-orderCount-input">تعداد سفارش</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-orderCount-input"
+                                        placeholder="تعداد سفارش">
+                                </div>
+
+
+
+
+
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-tiketCount-input">تعداد تیکت</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-tiketCount-input"
+                                        placeholder="تعداد تیکت">
+                                </div>
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-phone-input">شماره موبایل</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-phone-input"
+                                        placeholder="شماره موبایل">
+                                </div>
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-transactionCount-input">تعداد تراکنش</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-transactionCount-input"
+                                        placeholder="تعداد تراکنش">
+                                </div>
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-amount-input">کل هزینه تا الان</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-amount-input"
+                                        placeholder="کل هزینه">
+                                </div>
+
+                                <div class="edit-user-modal-input-wrapper">
+                                    <label for="edit-user-modal-date-input">تاریخ ثبت نام</label>
+                                    <input type="text" class="input-style" id="edit-user-modal-date-input"
+                                        placeholder="تاریخ ثبت نام">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edit-user-moda-btn-wrapper">
+                            <button class="btn btn-primary mt-4 text-light" id="edit-user-btn">ویرایش</button>
+                            <button class="btn-style py-3 btn-purple-style" id="submit-news-user" data-bs-toggle="modal"
+                                href="#submitNews" role="button">ثبت خبر</button>
+                            <button class="btn btn-danger" id="remove-user-btn">حذف کاربر</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button class="btn btn-primary" data-bs-dismiss="modal">تایید</button> -->
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- show order details modal -->
+    <div class="modal fade" id="showOrderDetails" aria-hidden="true" aria-labelledby="showOrderDetailsLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="showOrderDetailsLabel">مشاهده یا ویرایش سفارش</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="order-details-services-modal">
+                        <div class="row g-3">
+                            <div class="col-12">
+
+                                <div class="order-details-user-info">
+                                    <label for="" class="">شناسه کاربر</label>
+                                    <input type="text" class="input-style" disabled id="order-details-user-id">
+                                    <button class="btn-style btn-red-style" id="order-details-show-user-info"
+                                        data-bs-toggle="modal" href="#showUserInfos" role="button">دیدن مشخصات</button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+
+                                <div class="d-flex justify-content-center align-items-center text-center">
+                                    <label for="" class="me-3">شناسه سفارش</label>
+                                    <input type="text" class="input-style" id="order-details-order-id"
+                                        style="width: 15rem;" disabled>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="w-75 m-auto">
+                                    <input type="text" class="input-style" disabled id="order-details-date"
+                                        placeholder="تاریخ">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="w-75 m-auto">
+                                    <input type="text" class="input-style" disabled id="order-details-price"
+                                        placeholder="مبلغ">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="w-75 m-auto">
+                                    <input type="text" class="input-style" id="order-details-link" placeholder="لینک">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="w-75 m-auto">
+                                    <input type="text" class="input-style" id="order-details-count" placeholder="تعداد">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="w-75 m-auto">
+                                    <button class="btn-style btn-blue-style" id="edit-order-btn">ویرایش</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- order action modal -->
+    <div class="modal fade" id="orderAction" aria-hidden="true" aria-labelledby="orderActionLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderActionLabel">مشاهده یا ویرایش سفارش</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="check-order-status-modal">
+
+
+                        <div class="form-check">
+                            <input class="form-check-input order-status-input" type="radio" data-order-status="canceled"
+                                name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                لغو شده
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input order-status-input" type="radio"
+                                data-order-status="canceling" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                درحال لغو
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input order-status-input" type="radio"
+                                data-order-status="incompleted" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                تکمیل نشده
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input order-status-input" data-order-status="pending" type="radio"
+                                name="flexRadioDefault" id="flexRadioDefault4" checked>
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                درحال انتظار
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input order-status-input" data-order-status="doing" type="radio"
+                                name="flexRadioDefault" id="flexRadioDefault5" checked>
+                            <label class="form-check-label" for="flexRadioDefault5">
+                                درحال انجام
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input order-status-input" data-order-status="completed"
+                                type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+                            <label class="form-check-label" for="flexRadioDefault6">
+                                تکمیل شده
+                            </label>
+                        </div>
+                        <button class="btn-style btn-blue-style" id="edit-order-status-btn">ثبت تغییرات</button>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- show order info modal -->
+    <div class="modal fade" id="showOrderInfos" aria-hidden="true" aria-labelledby="showOrderInfosLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="showOrderInfosLabel">مشاهده اطلاعات کاربر</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="show-order-infos-modal">
+                        <input class="input-style" type="text" id="showOrderInfos-category">
+                        <input class="input-style" type="text" id="showOrderInfos-product">
+                        <input class="input-style" type="text" id="showOrderInfos-service">
+                        <input class="input-style" type="text" id="showOrderInfos-date">
+                        <input class="input-style" type="text" id="showOrderInfos-link">
+                        <div>
+                            <input class="input-style" type="text" id="showOrderInfos-count">
+                            <input class="input-style" type="text" id="showOrderInfos-price">
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tiket details modal -->
+    <div class="modal fade" id="tiketDetails" aria-hidden="true" aria-labelledby="tiketDetailsLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tiketDetailsLabel">جزئیات تیکت</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tiket-modal-details">
+
+                        <div class="d-flex w-100 justify-content-center align-items-center">
+                            <label for="">شناسه کاربر</label>
+                            <input class="input-style" id="show-tiket-details-userId-input" type="text" disabled>
+                            <button class="btn-style btn-red-style" id="show-tiket-details-userId-btn"
+                                data-bs-toggle="modal" href="#showUserInfos" role="button">دیدن مشخصات</button>
+                        </div>
+
+                        <div class="d-flex justify-content-around align-items-center">
+                            <label for="">شناسه سفارش</label>
+                            <input class="input-style" id="show-tiket-details-orderId-input" type="text" disabled>
+                            <button class="btn-style btn-red-style" id="show-tiket-details-orderId-btn"
+                                data-bs-toggle="modal" href="#showOrderInfos" role="button">دیدن مشخصات</button>
+                        </div>
+
+                        <input class="input-style" type="text" id="show-tiket-details-date-input" placeholder="تاریخ"
+                            disabled>
+                        <input class="input-style" type="text" id="show-tiket-details-file-input"
+                            placeholder="لینک فایل" disabled>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tiket content modal -->
+    <div class="modal fade" id="tiketContent" aria-hidden="true" aria-labelledby="tiketContentLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tiketContentLabel">مشاهده یا ویرایش تیکت</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="d-flex w-100 justify-content-center flex-column">
+                        <textarea class="textarea-style" name="" id="tiket-content-modal-box" cols="50"
+                            rows="10"></textarea>
+                        <button class="btn-style btn-blue-style mt-3" id="edit-tiket-content-modal-btn">ویرایش تیکت
+                            کاربر</button>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tiket answer modal -->
+    <div class="modal fade" id="tiketAnswer" aria-hidden="true" aria-labelledby="tiketAnswerLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tiketAnswerLabel">پاسخ به کاربر</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="d-flex w-100 justify-content-center flex-column">
+                        <textarea class="textarea-style" name="" id="tiket-answer-input-modal" cols="50"
+                            rows="10"></textarea>
+                        <button class="btn-style btn-blue-style my-3" id="tiket-answer-btn-modal">ارسال پاسخ</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- show user info modal -->
+    <div class="modal fade" id="showUserInfos" aria-hidden="true" aria-labelledby="showUserInfosLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="showUserInfosLabel">مشاهده اطلاعات کاربر</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="show-user-infos-modal">
+                        <input class="input-style" type="text" id="showUserInfos-name">
+                        <input class="input-style" type="text" id="showUserInfos-email">
+                        <input class="input-style" type="text" id="showUserInfos-phone">
+                        <input class="input-style" type="text" id="showUserInfos-username">
+                        <div>
+                            <input class="input-style" type="text" id="showUserInfos-inventory">
+                            <input class="input-style" type="text" id="showUserInfos-amount">
+                        </div>
+                        <div class="d-flex w-100 justify-content-center flex-wrap">
+                            <input class="input-style mx-2" style="width: 10rem;" type="text"
+                                id="showUserInfos-tiket-count">
+                            <input class="input-style mx-2" style="width: 10rem;" type="text"
+                                id="showUserInfos-order-count">
+                            <input class="input-style mx-2" style="width: 10rem;" type="text" id="showUserInfos-status">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- show content news -->
+    <div class="modal fade" id="newsContent" aria-hidden="true" aria-labelledby="newsContentLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsContentLabel">مشاهده یا ویرایش خبر</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="d-flex w-100 justify-content-center flex-column">
+                        <input type="text" class="input-style" id="show-news-title-input">
+                        <textarea class="textarea-style" name="" id="show-news-content-input" cols="50"
+                            rows="10"></textarea>
+                        <button class="btn-style btn-blue-style my-3" id="edit-news-btn">ویرایش</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- submit news to user modal -->
+    <div class="modal fade" id="submitNews" aria-hidden="true" aria-labelledby="submitNewsLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="submitNewsLabel">ثبت خبر</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="d-flex w-100 justify-content-center flex-column">
+                        <input type="text" class="input-style" id="submit-news-modal-title" placeholder="عنوان خبر">
+                        <textarea class="textarea-style mt-3" name="" id="submit-news-modal-content" cols="50" rows="10"
+                            placeholder="محتوای خبر"></textarea>
+                        <button class="btn-style btn-blue-style my-3" id="submit-user-news-btn">ثبت خبر</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- show service details -->
+
+    <div class="modal fade" id="serviceDetails" aria-hidden="true" aria-labelledby="serviceDetailsLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceDetailsLabel">مشاهده سرویس</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="d-flex flex-column justify-content-between align-items-center service-modal-details">
+                        <input type="text" class="input-style" id="service-details-modal-title-input" disabled>
+                        <textarea name="" id="service-details-modal-desc-input" cols="30" rows="10"
+                            class="textarea-style" disabled></textarea>
+                        <div class="d-flex">
+                            <input type="text" class="input-style" id="service-details-modal-min-input" disabled>
+                            <input type="text" class="input-style" id="service-details-modal-max-input" disabled>
+                        </div>
+
+                        <input type="text" class="input-style" id="service-details-modal-date-input" disabled>
+                        <input type="text" class="input-style" id="service-details-modal-price-input" disabled>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger fs-4 px-3" data-bs-dismiss="modal">لغو</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="full-screen-effect"></div>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+    <script src="content/javascript/modules/tippy-poper.min.js"></script>
+    <script src="node_modules/tippy.js/dist/tippy-bundle.umd.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <script src="content/javascript/app.js" type="module"></script>
+    <script src="content/javascript/template-funcs.js"></script>
+    <script> function dropdownFuncs() { document.getElementById("myDropdown").classList.toggle("show") } </script>
+</body>
+
+</html>

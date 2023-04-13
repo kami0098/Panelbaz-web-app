@@ -1,0 +1,33 @@
+.tiket-modal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tiket-modal-details > input {
+    width: 100%;
+}
+/* .tiket-modal-details div {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
+} */
+.tiket-modal-details div > input {
+    width: 10rem;
+    margin: 0 2rem;
+}
+
+.tiket-modal-details div > label {
+    color: #bbb;
+    width: 10rem;
+}
+
+
+.tiket-modal-details div > button{
+    font-size: 1.4rem;
+    padding: .7rem;
+}
+
+

@@ -1,0 +1,42 @@
+.news-add-new-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.news-add-new-message > input{
+    width: 30rem;
+}
+
+.check-form-news-send {
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-form-news-send label {
+    color: #bbb;
+}
+.news-add-new-message button{
+    width: 20rem;
+    margin-top: 2rem;
+}
+#send-news-to-user {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+#send-news-to-user input{
+    width: 10rem;
+    text-align: center;
+}
+#send-news-to-user.active {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+

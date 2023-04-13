@@ -1,0 +1,60 @@
+.order-details-services-modal {
+    width: 100%;
+}
+.order-details-services-modal input{
+    width: 100%;
+}
+.order-details-services-modal label {
+    color: #bbb;
+    font-size: 1.4rem;
+}
+.order-details-services-modal button {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.check-order-status-modal {
+    color: #ddddde;
+}
+
+.check-order-status-modal .form-check {
+    margin-top: 2rem;
+}
+
+.check-order-status-modal button {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+/* info */
+.show-order-infos-modal {
+    
+}
+.show-order-infos-modal input{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.show-order-infos-modal > div{
+    display: flex;    
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.show-order-infos-modal > div input{
+    flex: 1;
+}
+
+.order-details-user-info {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.order-details-user-info input{
+    width: 15rem;
+}
+.order-details-user-info button {
+    width: 12rem;
+    font-size: 1.4rem;
+}
