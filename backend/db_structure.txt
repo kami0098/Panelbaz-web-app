@@ -1,0 +1,111 @@
+Users
+    id
+    firstname
+    lastname
+    email
+    phone
+    username
+    password
+    inventory
+    orders_count
+    tikets_count
+    transactions_count
+    amount
+    status
+    user_token
+    action_time
+    date
+
+
+Users_Orders_Status
+    id
+    userID => (forgen key => Users id)
+    servicesID => (forgen key => Service id)
+    completed
+    doing
+    canceled
+    canceling
+    incompleted
+    pending
+    start_count
+    left_over
+    orderID => (forgen key => Order id)
+
+Transactions
+    id
+    userID => (forgen key => Users id)
+    date
+    status
+    price
+    user_info
+    description
+    action_time
+
+CATEGORIES
+    id
+    title
+    category_name
+
+Products
+    id
+    title
+    model
+    categoryID (forgen key => Categories id)
+
+Services
+    id
+    categoryID (forgen key => Categories id)
+    productsID => (forgen key => Products id)
+    title
+    description
+    price
+    max
+    min
+    order_complete_date
+    status
+
+Orders 
+    id
+    categoryID (forgen key => Categories id)
+    productsID => (forgen key => Products id)
+    servicesID => (forgen key => Services id)
+    userID => (forgen key => Users id)
+    date
+    link
+    count
+    price
+    action_time
+
+Tikets
+    id
+    userID => (forgen key => Users id)    
+    title
+    order_id
+    description
+    is_Active
+    date
+    action_time
+    file_url
+    
+News 
+    id
+    title
+    content
+    date
+    showUserContent => userID or ANY
+    action_time
+
+ADMIN
+    id
+    firstname
+    lastname
+    username
+    password
+    email
+    phone
+    profile
+    admin_token
+
+
+
+

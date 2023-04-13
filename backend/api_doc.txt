@@ -1,0 +1,202 @@
+main_url : http://localhost:3000/api/
+
+news
+
+    1.Get news
+        url = main_url/news/:UserToken
+        method = GET
+        response = news data
+--------------------------------
+services 
+
+    1.Get all service
+        url = main_url/services/
+        method = GET
+        response = products and services data
+
+    2.Get all product
+        url = main_url/services/all-products
+        method = GET
+        response = all products
+
+    3.Get serivce dependent product
+        url = main_url/services/select-product-services
+        method = GET
+        response = product related services data
+    
+    4.Get serivce with id
+        url = main_url/services/select-service/:serivceID
+        method = GET
+        response = desired service data
+--------------------------------
+transactions
+
+    1.Insert new transaction
+    
+        url = main_url/transaction/:UserToken
+        method = POST
+        body : {
+            price: ,
+        }
+        response = transaction success or failure
+
+    2.Get user transactions
+        
+            url = main_url/transaction/:UserToken
+            method = GET
+            response = user transactions data
+
+--------------------------------
+orders 
+    1.Record orders
+
+        url = main_url/orders/record-order/:UserToken
+        method = POST
+        body : {
+            link: ,
+            orderCount: ,
+            serivceID: ,
+            productID: ,
+        }
+        response = record order success or failure
+
+    2.Get all user orders
+
+        url = main_url/orders/all-orders/:UserToken
+        method = GET
+        response = all user orders data
+
+    3.Get user order
+
+        url = main_url/orders/:orderID/:UserToken
+        method = GET
+        response = user order data
+    
+    4.Edit order
+
+        url = main_url/orders/edit-order/:orderID/:UserToken
+        method = POST
+        body : {
+            link: ,
+            count: ,
+            isDecreaseInventory: ,
+            isEqual: ,
+            isIncreaseInventory: ,
+        }
+        response = edit order success or failure
+    
+    5.Cancel order
+
+        url = main_url/orders/:orderID/:UserToken
+        method = GET
+        response = cancel order success or failure
+
+--------------------------------
+status orders
+
+
+    1.Get user status orders
+
+        url = main_url/user-orders-status/
+        method = GET
+        response = user status order data
+
+    2.Get order satus
+
+        url = main_url/user-orders-status/get-order/:UserToken/:orderID
+        method = GET
+        response = user status order data
+
+--------------------------------
+
+users
+    1.Auth user and get data
+
+        url = main_url/users/auth
+        method = GET
+        headers : {authorization: UserToken},
+
+        response = user data
+
+
+    2.Insert new user data
+
+        url = main_url/users/
+        method = POST
+
+        body: {
+            firstname: ,
+            lastname: ,
+            username: ,
+            email: ,
+            phone: ,
+            password: ,
+        }
+
+        response = user inserted success or failure
+
+    3.Login user
+
+        url = main_url/users/login
+        method = POST
+
+        body: {
+            
+            username: , OR email: ,
+            password: ,
+        }
+
+        response = user logined success or failure and user token
+        
+    4.Update user
+
+        url = main_url/update-user/:UserToken
+        method = POST
+        body: {
+            isBasicInfoUpdate: ,
+            firstname: ,
+            lastname: ,
+            username: , 
+            email: ,
+            phone: ,
+            password: ,
+        }
+
+        response = user updated success or failure
+        
+--------------------------------
+
+tikets
+
+    1.Get user tikets
+
+        url = main_url/tikets/
+        method = GET
+        headers : {authorization: UserToken},
+
+        response = user tiket data
+
+
+    2.Insert new user tiket
+
+        url = main_url/tikets/:UserToken
+        method = POST
+        body: {
+            content: {
+                title: ,
+                orderID: ,
+                content: ,
+            }
+            files: {
+                file
+            }
+        }
+
+        response = user submited success or failure
+
+
+
+
+
+
+
