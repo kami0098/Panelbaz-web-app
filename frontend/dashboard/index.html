@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../contents/css/dashboard.css">
+    <link rel="icon" href="https://panelbaz.ir/wp-content/uploads/2021/07/cropped-art-2-1-32x32.png" sizes="32x32">
+    <title>پیشخوان | پنل باز</title>
+</head>
+
+<body>
+
+    <div class="main-dashboadrd-wrapper">
+        <aside class="dashboard-menu">
+            <div class="dashboard-menu-logo-wrap">
+
+                <img class="dashboard-menu-logo" src="../contents/images/hero-bg-1.png" alt="dash-menu-logo">
+            </div>
+
+            <ul class="dashboard-menu-list">
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html"
+                        class="menu-list-item-link active">پیشخوان</a>
+                </li>
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=record-order"
+                        data-action="record-order" class="menu-list-item-link">ثبت سفارش</a>
+                </li>
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=inventory-increase"
+                        data-action="inventory-increase" class="menu-list-item-link">افزودن اعتبار</a>
+                </li>
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=all-orders"
+                        data-action="all-orders" class="menu-list-item-link">سفارش ها</a>
+                </li>
+                <!-- <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=select-servcies"
+                        data-action="select-servcies" class="menu-list-item-link">خرید بسته های نمایندگی</a>
+                </li> -->
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=all-services"
+                        data-action="all-services" class="menu-list-item-link">سرویس ها</a>
+                </li>
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=payments" data-action="payments"
+                        class="menu-list-item-link">تراکنش ها</a>
+                </li>
+                <!-- <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=edit-profile" class="menu-list-item-link">جبران ریزش</a>
+                </li> -->
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=send-tiket"
+                        data-action="send-tiket" class="menu-list-item-link">بازکردن تیکت</a>
+                </li>
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=tikets"
+                        class="menu-list-item-link" data-action="tikets">تیکت ها</a>
+                </li>
+                <!-- <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=" class="menu-list-item-link">api</a>
+                </li> -->
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=edit-profile"
+                        data-action="edit-profile" class="menu-list-item-link">ویرایش پروفایل</a>
+                </li>
+                <li class="dashboard-menu-list-item">
+                    <a href="http://127.0.0.1:5500/frontend/dashboard/index.html?action=loguot" data-action="loguot"
+                        class="menu-list-item-link">خروج</a>
+                </li>
+            </ul>
+            <div class="dashboard-menu-footer">
+                <div class="dashboard-inventory-box">
+                    <p>موجودی</p>
+                    <p id="show-inventory-menu">300000 تومان</p>
+                </div>
+
+                <a href="index.html?action=inventory-increase" class="d-block w-100"
+                    style="margin: 1rem auto auto auto; text-align: center;">
+
+                    <button class="btn-style increase-inventory-mneu-btn">افزایش موجودی</button>
+                </a>
+            </div>
+
+        </aside>
+        <main class="dashboard-main-content">
+            <div class="main-container">
+
+                <section class="dashboard-userinfo">
+                    <div class="dashboard-userinfo-box">
+
+                        <img class="user-info-logo" src="../contents/images/user-img.png" alt="user-info">
+
+                        <div class="dropdown">
+                            <button class="dropbtn" id="dashboard-header-user-infos">
+                                محمد امین سعیدی راد
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+
+                            </button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#home">ویرایش پروفایل</a>
+                                <a href="#about">خروج</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-style" id="toggler-menu-btn">
+                        <span class="menu-btn-first-line"></span>
+                        <span class="menu-btn-middle-line"></span>
+                        <span class="menu-btn-last-line"></span>
+                    </button>
+
+                </section>
+
+                <div class="main-container-content">
+
+                    <!-- Counter -->
+                    <!-- <section class="dashboard-count">
+
+                        <div class="dashboard-account-info">
+       
+                           <div class="row g-4">
+                               <div class="col-12 col-md-3">
+                                   <div class="account-info-cover">
+                                       <img src="../contents/images/author.svg" width="120" alt="">
+                                       <p>نوع : کاربر عادی</p>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-9">
+                                   <div class="row g-4">
+                                       <div class="col-12 col-sm-6 col-lg-4">
+                                           <div class="acoount-info-box acoount-info-tikets-box">
+                                               <h3>0</h3>
+                                               <p>تیکت ها</p>
+                                           </div>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-lg-4">
+                                           <div class="acoount-info-box acoount-info-amounts-box">
+                                               <h3>138,0000 تومان</h3>
+                                               <p>میزان هزینه</p>
+                                           </div>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-lg-4">
+                                           <div class="acoount-info-box acoount-info-orders-box">
+                                               <h3>15</h3>
+                                               <p>سفارشات</p>
+                                           </div>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-lg-4">
+                                           <div class="acoount-info-box acoount-info-inventorys-box">
+                                               <h3>5,280 تومان</h3>
+                                               <p>موجودی</p>
+                                           </div>
+                                       </div>
+       
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+       
+                       <div class="dashboard-user-orders-status">
+                           <h2>امار سفارشات</h2>
+                           <div class="row g-4">
+                               <div class="col-12 col-md-6 col-lg-3">
+                                   <div class="user-order-status-box">
+                                       <div class="order-status-box-icon-wrap">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                                               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                                               <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+                                           </svg>
+                                       </div>
+                                       <div class="order-status-box-details-wrap">
+                                           
+                                           <span>14</span>
+                                           <h4>درحال انجام</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3">
+                                   <div class="user-order-status-box">
+                                       <div class="order-status-box-icon-wrap">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                                               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                                               <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+                                           </svg>
+                                       </div>
+                                       <div class="order-status-box-details-wrap">
+                                           
+                                           <span>14</span>
+                                           <h4>درحال انجام</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3">
+                                   <div class="user-order-status-box">
+                                       <div class="order-status-box-icon-wrap">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                                               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                                               <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+                                           </svg>
+                                       </div>
+                                       <div class="order-status-box-details-wrap">
+                                           
+                                           <span>14</span>
+                                           <h4>درحال انجام</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3">
+                                   <div class="user-order-status-box">
+                                       <div class="order-status-box-icon-wrap">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                                               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                                               <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+                                           </svg>
+                                       </div>
+                                       <div class="order-status-box-details-wrap">
+                                           
+                                           <span>14</span>
+                                           <h4>درحال انجام</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-12 col-md-6 col-lg-3">
+                                   <div class="user-order-status-box">
+                                       <div class="order-status-box-icon-wrap">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                                               <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+                                               <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+                                           </svg>
+                                       </div>
+                                       <div class="order-status-box-details-wrap">
+                                           
+                                           <span>14</span>
+                                           <h4>درحال انجام</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       
+                       <div class="dashboard-user-tikets">
+       
+                           <div class="user-tiket-box">
+                               <h3> تیکت ها(5 تیکت آخر)</h3>
+                               <p></p>
+                           </div>
+                           <div class="user-news-box">
+                               <h3> اطلاعیه و اخبار</h3>
+                               <p></p>
+                           </div>
+                           
+                       </div>
+                    </section> -->
+
+                    <!-- record order -->
+
+                    <!-- <section class="dashboard-record-orders">
+                        <div class="main-card-content-section">
+
+                            <div class="main-card-content-section-header">
+                                <h4>ارسال سفارش تکی</h4>
+                            </div>
+                            <div class="main-card-content-section-body">
+                                <h2 class="record-order-title">ثبت سفارش به معنی قبول قوانین میباشد! اینجا کلیک کنید</h2>
+        
+                                <div class="row mt-4">
+                                    <div class="col-12 col-lg-7">
+                                        <select class="form-select shadow-none record-order-select" aria-label="Default select example">
+                                            <option selected>لطفا سرویس خورد نظر خود را انتخاب کنید</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <p class="order-select-title">لطفا سرویس مورد نظر خود انتخاب نمایید</p>
+                                        <select class="form-select shadow-none record-order-select" aria-label="Default select example">
+                                            <option selected>لطفا سرویس خورد نظر خود را انتخاب کنید</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+
+                                        <form action="" class="record-order-form mt-5">
+                                            <p>لینک</p>
+                                            <input type="text" class="dashboard-input-style" placeholder="لینک رو وارد کنید">
+                                            <p>تعداد</p>
+                                            <input type="text" class="dashboard-input-style" placeholder="تعداد مورد نیاز">
+                                            <p class="mt-4">زمان حدودی تکمیل سفارش</p>
+                                            <input type="text" class="dashboard-input-style record-order-count-input" value="39 دقیقه" disabled>
+                                        </form>
+
+                                        <div class="record-order-details-table-wrapper">
+
+                                            <div class="record-order-details-table">
+                                                <div>
+                                                    <p>محصول</p>
+                                                    <p>قیمت</p>
+                                                </div>
+                                                <div>
+                                                    <p>🏅 فالوور میکس کم ریزش | سرور طلایی × 34342	</p>
+                                                    <p>۶۱۱٬۹۷۴ تومان</p>
+                                                </div>
+                                                <div class="record-order-decrease-wallet-txt">
+                                                    <p>کسر از کیف پول	</p>
+                                                    <p>۵٬۱۸۰ تومان</p>
+                                                </div>
+                                                <div class="record-order-payment-wallet-txt">
+                                                    <p>مبلغ قابل پرداخت	</p>
+                                                    <p>۶۰۶٬۷۹۴ تومان</p>
+                                                </div>
+                                                <div>
+                                                    <p>به حروف: ششصد و شش هزار و هفتصد و نود و چهار تومان</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="record-order-input-checkbox">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                من قوانین و مقررات را خوانده و با آن موافقم.
+                                            </label>
+                                        </div>
+                                        
+                                        <button class="btn-style record-order-submit-btn">ثبت سفارش</button>
+
+                                    </div>
+                                    <div class="col-12 col-lg-5">
+                                        <div class="record-order-detail-box mt-5 mt-lg-0">
+                                            <h3>توضیحات سرویس</h3>
+                                            <p>توضیحات مربوط به هر سرویس در این قسمت قرار خواهد گرفت</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>  -->
+
+                    <!-- Inventory increase -->
+
+                    <!-- <section class="dashboard-inventory-increase">
+                        <div class="main-card-content-section">
+
+                            <div class="main-card-content-section-header">
+                                <h4>افزایش موجودی</h4>
+                            </div>
+                            <div class="main-card-content-section-body">
+                                
+                                <div class="inventory-increase-content">
+                                    <div class="inventory-increase-details">
+                                        <p class="inventory-available-count">شما هم‌اکنون <span style="color: #f35353;">5,180</span> تومان موجودی در حساب خود دارید.</p>
+                                        <p class="inventory-minimum-withdrawal">حداقل میزان پرداخت: 1,000 تومان</p>
+                                        <p class="inventory-maximum-withdrawal">حداکثر میزان پرداخت: 10,000,000 تومان</p>
+
+                                    </div>
+                                
+                                    <form action="" class="inventory-increase-form">
+                                        <h3>افزایش موجودی حساب</h3>
+                                    
+                                        <div class="flex-center">
+                                            <input type="number" id="inventory-increase-input">
+                                            <label for="inventory-increase-input">تومان</label>
+
+                                        </div>
+                                        
+                                        <p class="off-code-text">کوپن تخفیف دارید؟ <span class="off-code-btn">برای نوشتن کد اینجا کلیک کنید</span></p>
+                                    
+                                        <div class="off-code-wrapper">
+                                            <input type="text" placeholder="کد تخفیف : ">
+                                            <button class="btn-style">بررسی کد تخفیف</button>
+                                        </div>
+                                        
+                                        <div class="payment-gateway-wrapper">
+
+                                            <div class="zarinpal-payment-banner">
+                                                <img src="../contents/images/zarinpal-payment.svg" alt="">
+                                            </div>
+                                            <span>درگاه زرین پال</span>
+                                        </div>
+                                    
+                                        <button class="btn-style inventory-increase-btn">افزایش موجودی</button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section> -->
+
+                    <!-- all orders -->
+
+                    <!-- <section class="all-orders">
+                        <div class="main-card-content-section">
+
+                            <div class="main-card-content-section-header">
+                                <h4>سفارش ها</h4>
+                            </div>
+                            <div class="main-card-content-section-body">
+                                <div class="main-content-table-wrapper all-orders-table-wrapper">
+
+
+                                    <table class="main-content-table all-orders-table">
+                                        <thead>
+                                            <tr>
+                                                <th>شناسه</th>
+                                                <th>تاریخ ثبت</th>
+                                                <th>جزییات</th>
+                                                <th>وضعیت</th>
+                                                <th>عملیات ها</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>23030</td>
+                                                <td>13 مهر 1401 10:30</td>
+                                            
+                                                <td>
+                                                    <div class="all-order-table-details">
+                                                        <span>سرویس: 57 - ⚡️ هیدن الماس | استارت آنی</span>
+                                                        <span>لینک: @luxuryGN</span>
+                                                        <span>تعداد: 1000</span>
+                                                        <span>مبلغ: 12,000 تومان</span>
+                                                        <span>شروع شمارنده: 1677</span>
+                                                        <span>باقی مانده: 0</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button class="btn-style order-status-btn">کامل شده</button>
+                                                </td>
+                                                <td>
+                                                    <button>ow</button>
+                                                    <button>pd</button>
+                                                </td>
+        
+                                            </tr>
+                                            
+                                        </tbody>
+                                        
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+
+                    <!-- servcies -->
+
+                    <!-- <section class="services">
+
+                        <div class="row flex-revese-column">
+                            <div class="col-12 col-lg-7">
+                                <div class="get-service-info mt-5 mt-lg-0">
+                                    <h2 class="services-info-title">سرویس ها</h2>
+                                    <p class="services-info-caption my-4">لطفا دسته مورد نظر خود را انتخاب کرده و بر روی دریافت خدمات کلیک کنید</p>
+                                    <select class="form-select shadow-none record-order-select" aria-label="Default select example">
+                                        <option selected>لطفا سرویس خورد نظر خود را انتخاب کنید</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <button class="btn-style get-services-btn">دریافت خدمات</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="services-banner-wrap">
+                                    <img src="../contents/images/new-ticket-help.png" alt="services-logo">
+                                    <p>نکات مربوط به این قسمت را می توانید اینجا بخوانید</p>
+                                </div>
+                                <button class="btn-style show-all-services">مشاهده همه سرویس ها</button>
+                            </div>
+                        </div>
+                        
+                        <div class="main-card-content-section">
+                            <div class="main-card-content-section-header">
+                                <h4>سرویس ها</h4>
+                            </div>
+                            <div class="main-card-content-section-body">
+                                <div class="main-content-table-wrapper">
+
+
+                                    <table class="main-content-table">
+                                        <thead>
+                                            <tr>
+                                   
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+              
+        
+                                            </tr>
+                                            
+                                        </tbody>
+                                        
+                                    </table>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </section> -->
+
+                    <!-- all services -->
+
+                    <!-- <section class="dashboard-all-services">
+
+                        <div class="main-card-content-section">
+
+                            <div class="main-card-content-section-header">
+                                <h4>🎁 سرویس ویژه 🎁</h4>
+                            </div>
+                            <div class="main-card-content-section-body">
+                                
+                                <div class="main-content-table-wrapper">
+                                    <table class="main-content-table dashboard-service-table">
+                                        <thead>
+                                            <tr>
+                                                <th>شناسه </th>
+                                                <th>نام</th>
+                                                <th>توضیحات</th>
+                                                <th>قیمت هر 1000 عدد</th>
+                                                <th>حداقل / حداکثر</th>
+                                                <th>زمان تکمیلی</th>
+                                                <th>وضعیت</th>
+                                                <th>عملیات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3456</td>
+                                                <td>🏅 فالوور میکس کم ریزش | سرور طلایی</td>
+                                                <td>
+                                                    <button class="btn-style all-service-details-btn">توضیحات</button>
+                                                </td>
+                                                <td>17,820  تومان</td>
+                                                <td>300000/50</td>
+                                                <td>39 دقیقه</td>
+                                                <td class="services-table-status">فعال</td>
+                                                <td><button>add</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        
+                        <div class="main-card-content-section">
+
+                            <div class="main-card-content-section-header">
+                                <h4>🌟 - پکیج های اینستاگرام</h4>
+                            </div>
+                            <div class="main-card-content-section-body">
+                                
+                                <div class="main-content-table-wrapper">
+                                    <table class="main-content-table dashboard-service-table">
+                                        <thead>
+                                            <tr>
+                                                <th>شناسه </th>
+                                                <th>نام</th>
+                                                <th>توضیحات</th>
+                                                <th>قیمت هر 1000 عدد</th>
+                                                <th>حداقل / حداکثر</th>
+                                                <th>زمان تکمیلی</th>
+                                                <th>وضعیت</th>
+                                                <th>عملیات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3456</td>
+                                                <td>🏅 فالوور میکس کم ریزش | سرور طلایی</td>
+                                                <td>
+                                                    <button class="btn-style all-service-details-btn">توضیحات</button>
+                                                </td>
+                                                <td>17,820  تومان</td>
+                                                <td>300000/50</td>
+                                                <td>39 دقیقه</td>
+                                                <td class="services-table-status">فعال</td>
+                                                <td><button>add</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        
+                        <div class="main-card-content-section">
+
+                            <div class="main-card-content-section-header">
+                                <h4>👤 - فالوور میکس اينستاگرام</h4>
+                            </div>
+                            <div class="main-card-content-section-body">
+                                
+                                <div class="main-content-table-wrapper">
+                                    <table class="main-content-table dashboard-service-table">
+                                        <thead>
+                                            <tr>
+                                                <th>شناسه </th>
+                                                <th>نام</th>
+                                                <th>توضیحات</th>
+                                                <th>قیمت هر 1000 عدد</th>
+                                                <th>حداقل / حداکثر</th>
+                                                <th>زمان تکمیلی</th>
+                                                <th>وضعیت</th>
+                                                <th>عملیات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3456</td>
+                                                <td>🏅 فالوور میکس کم ریزش | سرور طلایی</td>
+                                                <td>
+                                                    <button class="btn-style all-service-details-btn">توضیحات</button>
+                                                </td>
+                                                <td>17,820  تومان</td>
+                                                <td>300000/50</td>
+                                                <td>39 دقیقه</td>
+                                                <td class="services-table-status">فعال</td>
+                                                <td><button>add</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section> -->
+
+                    <!-- payments -->
+
+                    <!-- <section class="dashboard-payments">
+
+                        <div class="payment-section-details">
+                            <div class="payment-details-gateway-state">
+                                <p>همه</p>
+                                <div>4</div>
+                            </div>
+                            <div class="payment-details-all-state">
+                                <p>زرین پال</p>
+                                <div>4</div>
+                            </div>
+                        </div>
+
+                        <div class="main-card-content-section mt-4">
+
+                            <div class="main-card-content-section-header">
+                                <h4>پرداخت ها</h4>
+                            </div>
+                            <div class="main-card-content-section-body">
+                                
+                                <div class="main-content-table-wrapper">
+                                    <table class="main-content-table dashboard-payment-table">
+                                        <thead>
+                                            <tr>
+                                                <th>شناسه</th>
+                                                <th>درگاه</th>
+                                                <th>مبلغ پرداخت</th>
+                                                <th>اطلاعات کاربر</th>
+                                                <th>تاریخ</th>
+                                                <th>توضیحات</th>
+                                                <th>وضعیت</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>234490</td>
+                                                <td class="payment-table-gateway"><button class="btn-style">زرین پال</button></td>
+                                                <td>50,000 تومان</td>
+                                                <td>
+                                                    <p>ارش قدرتی</p>
+                                                    <p>09018987666</p>
+                                                </td>
+                                                <td>20 شهریور 1401 - 17:06</td>
+                                                <td>اعتبار قبل از شارژ: 3,500 تومان</td>
+                                                <td class="payment-table-status">موفق</td>
+                                            </tr>
+                                            <tr>
+                                                <td>234490</td>
+                                                <td class="payment-table-gateway"><button class="btn-style">زرین پال</button></td>
+                                                <td>50,000 تومان</td>
+                                                <td>
+                                                    <p>ارش قدرتی</p>
+                                                    <p>09018987666</p>
+                                                </td>
+                                                <td>20 شهریور 1401 - 17:06</td>
+                                                <td>اعتبار قبل از شارژ: 3,500 تومان</td>
+                                                <td class="payment-table-status">موفق</td>
+                                            </tr>
+                                            <tr>
+                                                <td>234490</td>
+                                                <td class="payment-table-gateway"><button class="btn-style">زرین پال</button></td>
+                                                <td>50,000 تومان</td>
+                                                <td>
+                                                    <p>ارش قدرتی</p>
+                                                    <p>09018987666</p>
+                                                </td>
+                                                <td>20 شهریور 1401 - 17:06</td>
+                                                <td>اعتبار قبل از شارژ: 3,500 تومان</td>
+                                                <td class="payment-table-status">موفق</td>
+                                            </tr>
+                                            <tr>
+                                                <td>234490</td>
+                                                <td class="payment-table-gateway"><button class="btn-style">زرین پال</button></td>
+                                                <td>50,000 تومان</td>
+                                                <td>
+                                                    <p>ارش قدرتی</p>
+                                                    <p>09018987666</p>
+                                                </td>
+                                                <td>20 شهریور 1401 - 17:06</td>
+                                                <td>اعتبار قبل از شارژ: 3,500 تومان</td>
+                                                <td class="payment-table-status">موفق</td>
+                                            </tr>
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section> -->
+
+                    <!-- Edit profile -->
+
+                    <!-- <section class="dashboard-edit-profile">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+
+                                <div class="main-card-content-section">
+                                    <div class="main-card-content-section-header">
+                                        <h4> اطلاعات پایه</h4>
+                                    </div>
+                                    <div class="main-card-content-section-body">
+                                    
+                                        <form action="" class="dashboard-edit-profile-form">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="">نام</label>
+                                                    <input type="text" class="dashboard-input-style">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="">نام خانوادگی</label>
+                                                    <input type="text" class="dashboard-input-style">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="">آدرس ایمیل</label>
+                                                    <input type="text" class="dashboard-input-style">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="">نام کاربری</label>
+                                                    <input type="text" class="dashboard-input-style">
+                                                </div>
+                                            </div>
+                                            <button class="btn-style">ویرایش اطلاعات</button>
+                                        </form>
+        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+
+                                <div class="main-card-content-section">
+                                    <div class="main-card-content-section-header">
+                                        <h4>ویرایش اطلاعات کاربری</h4>
+                                    </div>
+                                    <div class="main-card-content-section-body">
+                                    
+                                        <form action="" class="dashboard-edit-profile-form">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <label for="">شماره مبایل</label>
+                                                    <input type="text" class="dashboard-input-style">
+                                                </div>
+                                                <p class="edit-profile-form-caption">در صورتی که قصد تغییر ندارید خالی بگذارید</p>
+                                                <div class="col-12">
+                                                    <label for="">گذرواژه جدید</label>
+                                                    <input type="text" class="dashboard-input-style">
+                                                </div>
+        
+                                                <div class="col-12">
+                                                    <label for="">تکرار گذرواژه جدید</label>
+                                                    <input type="text" class="dashboard-input-style">
+                                                </div>
+
+                                            </div>
+                                            <button class="btn-style">ذخیره تغییرات</button>
+                                        </form>
+        
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+
+
+                    <!-- send tiket -->
+
+                    <!-- <section class="dashboard-send-tiket">
+                        <div class="row flex-revese-column">
+                            <div class="col-12 col-lg-7">
+                                <div class="send-tiket-from-wrap mt-5 mt-lg-0">
+                                    <h2>چگونه می‌توانیم به شما کمک کنیم؟</h2>
+                                    <h4>درخواست خود را به صورت یک تیکت مطرح کنید تا کارشناسان ما در اسرع وقت، به آن پاسخ دهند.</h4>
+    
+                                    <form action="" class="send-tiket-from">
+                                        <input type="text" class="dashboard-input-style" placeholder="عنوان">
+                                        <input type="text" class="dashboard-input-style" placeholder="شناسه سفارش">
+                                        <textarea name="" class="dashboard-input-style" id="" cols="30" rows="13"></textarea>
+    
+                                        <div class="send-tiket-form-btn">
+                                            <button class="btn-style" id="upload-file-btn">بارگذاری فایل</button>
+                                            <button class="btn-style" id="send-tiket-btn">ارسال تیکت</button>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="send-tiket-details">
+                                    <img src="../contents/images/new-ticket-help.png" alt="">
+                                    <p>درخواست خود را با دقت وارد کنید تا کارشناسان ما بتوانند پاسخ کاملی را برای شما ارسال نمایند.</p>
+                                    <p>ایجاد یک تیکت برای هر موضوع کافی است. لطفاً از تکرار یک مساله پرهیز کنید.</p>
+                                    <p>ارائه تصویر یا فایل مرتبط با موضوع، می‌تواند به بررسی دقیق‌تر درخواست شما کمک کند</p>
+                                    <p>فایل شما باید حجمی کمتر از 3 مگابایت داشته باشد.</p>
+                                    <p>فرمت های رایج متنی، تصویری و فشرده مجاز می باشد.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+
+                    <!-- show tikets -->
+
+                    <!-- <section class="dashboard-show-tikets">
+                        <div class="main-card-content-section">
+
+                            <div class="main-card-content-section-header">
+                                <h4>تیکت های شما</h4>
+                            </div>
+                            <div class="main-card-content-section-body show-tikets-content-wrap">
+
+                                <div class="main-content-table-wrapper">
+                                    <table class="main-content-table dashboard-payment-table">
+                                        <thead>
+                                            <tr>
+                                                <th>شناسه</th>
+                                                <th>درگاه</th>
+                                                <th>مبلغ پرداخت</th>
+                                                <th>اطلاعات کاربر</th>
+                                                <th>تاریخ</th>
+                                                <th>توضیحات</th>
+                                                <th>وضعیت</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>234490</td>
+                                                <td class="payment-table-gateway"><button class="btn-style">زرین پال</button></td>
+                                                <td>50,000 تومان</td>
+                                                <td>
+                                                    <p>ارش قدرتی</p>
+                                                    <p>09018987666</p>
+                                                </td>
+                                                <td>20 شهریور 1401 - 17:06</td>
+                                                <td>اعتبار قبل از شارژ: 3,500 تومان</td>
+                                                <td class="payment-table-status">موفق</td>
+                                            </tr>
+                                            <tr>
+                                                <td>234490</td>
+                                                <td class="payment-table-gateway"><button class="btn-style">زرین پال</button></td>
+                                                <td>50,000 تومان</td>
+                                                <td>
+                                                    <p>ارش قدرتی</p>
+                                                    <p>09018987666</p>
+                                                </td>
+                                                <td>20 شهریور 1401 - 17:06</td>
+                                                <td>اعتبار قبل از شارژ: 3,500 تومان</td>
+                                                <td class="payment-table-status">موفق</td>
+                                            </tr>
+                                            <tr>
+                                                <td>234490</td>
+                                                <td class="payment-table-gateway"><button class="btn-style">زرین پال</button></td>
+                                                <td>50,000 تومان</td>
+                                                <td>
+                                                    <p>ارش قدرتی</p>
+                                                    <p>09018987666</p>
+                                                </td>
+                                                <td>20 شهریور 1401 - 17:06</td>
+                                                <td>اعتبار قبل از شارژ: 3,500 تومان</td>
+                                                <td class="payment-table-status">موفق</td>
+                                            </tr>
+                                            <tr>
+                                                <td>234490</td>
+                                                <td class="payment-table-gateway"><button class="btn-style">زرین پال</button></td>
+                                                <td>50,000 تومان</td>
+                                                <td>
+                                                    <p>ارش قدرتی</p>
+                                                    <p>09018987666</p>
+                                                </td>
+                                                <td>20 شهریور 1401 - 17:06</td>
+                                                <td>اعتبار قبل از شارژ: 3,500 تومان</td>
+                                                <td class="payment-table-status">موفق</td>
+                                            </tr>
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="open-new-tikets-circle-btn flex-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+
+
+                </div>
+        </main>
+    </div>
+
+    <!-- loading -->
+    <div class="menu-full-screen-blur">
+
+    </div>
+
+    <div class="loading-fullscreen flex-center">
+        <img src="../contents/images/hero-bg-1.png" width="150" alt="loading-logo">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- show text content modal -->
+    <div class="modal fade" id="showTextContentModal" aria-hidden="true" aria-labelledby="textContentModalLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="textContentModalLabel">مشاهده محتوا</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4" id="show-content-modal">
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary px-4 py-2 fs-4" data-bs-dismiss="modal">تایید</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/num2persian/dist/num2persian-min.js"></script>
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="../node_modules/persiandate/dist/persiandate.js"></script>
+
+    <script type="module" src="../contents/javascript/dashboard.js"></script>
+    <script src="../contents/javascript/dashboard-related-template-functions.js">
+
+    </script>
+    <!-- <script type="module" src="../contents/javascript/dashboard-reander-templates.js"></script> -->
+</body>
+
+</html>

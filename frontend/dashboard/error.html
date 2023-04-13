@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../contents/css/dashboard.css">
+    <link rel="icon" href="https://panelbaz.ir/wp-content/uploads/2021/07/cropped-art-2-1-32x32.png" sizes="32x32">
+    <title>خطا</title>
+
+    <style>
+        body {
+            background-color: #2b2b33;      
+        }
+        main {
+            width: 100%;
+            height: 100vh;
+        }
+        .show-error-box {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .error-logo {
+            max-width: 25rem;
+        }
+
+        .error-title {
+            margin-top: 2rem;
+            color: var(--white);
+            font-size: 2.5rem;
+        }
+        .error-description {
+            color: var(--white);
+        }
+
+        .back-btn {
+            background-color: var(--red-50);
+            color: var(--white);
+            padding: 1rem 5rem;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <main class="flex-center"> 
+
+        <div class="show-error-box">
+            <img src="../contents/images/hero-bg-1.png" class="error-logo" alt="">
+            <h2 class="error-title">خطا 404</h2>
+            <p class="error-description">صفحه مورد نظر پیدا نشد</p>
+            <a href="http://127.0.0.1:5500/frontend/index.html">
+                <button class="btn-style back-btn">برگشت</button>
+            </a>
+        </div>
+    </main>
+
+
+    <script>
+
+    </script>
+
+</body>
+</html>

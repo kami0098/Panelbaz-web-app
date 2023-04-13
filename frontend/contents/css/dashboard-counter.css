@@ -1,0 +1,179 @@
+
+/* account info */
+
+.dashboard-account-info {
+    margin-top: 4rem;
+}
+
+.account-info-cover {
+    background-color: #0f1c70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.account-info-cover img {
+    opacity: .8;
+}
+
+.account-info-cover p {
+    color: #ddddde;
+    margin-top: 2rem;
+}
+
+.acoount-info-box {
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.acoount-info-box h3 {
+    color: var(--white);
+}
+
+.acoount-info-box p {
+    color: #ddddde;
+    margin-top: 1.5rem;
+}
+
+.acoount-info-tikets-box {
+    background-color: #a3be8c;
+}
+
+.acoount-info-amounts-box {
+    background-color: #88c0d0;
+}
+
+.acoount-info-orders-box {
+    background-color: #b48ead;
+}
+
+.acoount-info-inventorys-box {
+    background-color: #ff9e73;
+}
+
+
+.main-dashboadrd-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+
+/* dashboard user orders status */
+
+.dashboard-user-orders-status {
+    border-top: 1px solid #34343e;
+    margin-top: 3rem;
+    padding: 3rem 0;
+
+}
+
+.dashboard-user-orders-status h2 {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.user-order-status-box {
+    background-color: #34343e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-radius: .5rem;
+}
+
+.order-status-box-icon-wrap {
+    background-color: #3d3b59;
+    border-radius: 100%;
+    padding: 1rem;
+    border: 1px solid #5850b4;
+    animation: order-box-anime 1s infinite 1s linear;
+    
+}
+
+@keyframes order-box-anime {
+
+    0% {
+        box-shadow: 0 0 0 5px rgba(88, 80, 180, 0.5);
+
+    }
+
+    25% {
+        box-shadow: 0 0 0 7px rgba(88, 80, 180, 0.3);
+
+    }
+
+    50% {
+        box-shadow: 0 0 0 8px rgba(88, 80, 180, 0.2);
+
+    }
+
+    75% {
+        box-shadow: 0 0 0 10px rgba(88, 80, 180, 0.1);
+
+    }
+
+    100% {
+        box-shadow: 0 0 0 8px rgba(88, 80, 180, 0);
+
+    }
+
+}
+
+
+.order-status-box-icon-wrap svg {
+    fill: #7367f0;
+}
+
+.order-status-box-details-wrap {
+    text-align: left;
+}
+
+.order-status-box-details-wrap span {
+    font-size: 1.9rem;
+    color: var(--white);
+}
+
+.order-status-box-details-wrap h4 {
+    margin-top: 1.4rem;
+    color: #9aa0ac;
+}
+
+/* dashboard user tikets */
+
+.dashboard-user-tikets {
+    border-top: 1px solid #34343e;
+    margin-top: 1rem;
+
+}
+
+.user-tiket-box,
+.user-news-box {
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #212128;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.user-tiket-box h3,
+.user-news-box h3 {
+    font-size: 2rem;
+    color: #ddddde;
+    font-weight: normal;
+    border-bottom: 1px solid #2b2b33;
+
+    padding-bottom: 3rem;
+}
+
+.user-tiket-box p,
+.user-news-box p {
+    margin: 3rem 0;
+}
+
+/* news */
+.show-news-dashboard-table {
+    min-width: 95rem;
+}

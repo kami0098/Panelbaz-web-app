@@ -1,0 +1,27 @@
+
+.all-orders-table {
+    width: 100rem;
+}
+
+.all-order-table-details {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    gap: 1.5rem;
+    text-align: right;
+    border: 1px solid var(--white);
+    border-radius: .4rem;
+    padding: .5rem 0;
+}
+.all-order-table-details span {
+    border-bottom: 1px solid var(--white);
+    padding: .5rem;
+    font-size: 1.4rem;
+}
+.all-order-table-details span:last-child {
+    border: none;
+}
+.order-status-btn {
+    background-color: #7ccc77;
+    color: var(--white);
+}

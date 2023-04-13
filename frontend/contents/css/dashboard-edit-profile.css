@@ -1,0 +1,18 @@
+
+.dashboard-edit-profile-form label{
+    color: #ddddde;
+    margin: 1rem 0;
+}
+
+.dashboard-edit-profile-form button{
+    background-color: #1f94ce;
+    color: var(--white);
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+.dashboard-edit-profile-form .edit-profile-form-caption {
+    color: #d94255;
+    margin: 2rem 0;
+    line-height: 2.5rem;
+}

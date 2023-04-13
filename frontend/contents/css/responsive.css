@@ -1,0 +1,158 @@
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1250px;
+    }
+
+}
+@media screen and (max-width: 1200px){
+
+    .services-banner-wrap img {
+        width: 250px !important;
+    }
+
+    .send-tiket-details img{
+        width: 250px !important; 
+    }
+ 
+}
+@media screen and (max-width: 992px){
+    .main-banner-wrap {
+        display: none;
+    }
+    .main-contect-wrapper {
+        padding-top: 10rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .dashboard-menu {
+        right: -240px;
+        width: 240px !important;
+    }
+    .dashboard-main-content {
+        padding-right: 0 !important;
+    }
+    #toggler-menu-btn {
+        display: flex !important;
+    }
+
+    .flex-revese-column {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .send-tiket-details img{
+        width: 220px !important; 
+    }
+    .navbar-dropdown-wrapper {
+        display: none;
+    }
+ 
+}
+@media screen and (max-width: 768px){
+    .main-panelbaz-img {
+        width: 300px !important;
+    }
+    .main-panelbaz-description {
+        max-width: 400px;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    .main-panelbaz-img {
+        width: 200px !important;
+    }
+
+    .main-introduction {
+        padding-bottom: 10rem !important;
+    }
+
+    .footer-title {
+        font-family: 1.6rem !important;
+        line-height: 3.2rem;
+    }
+    .footer-description {
+        font-size: 1.4rem;
+        padding: 0 10px;
+    }
+    .footer-logo {
+        width: 200px !important;
+    }
+    .inventory-increase-details p{
+        font-size: 1.5rem !important;
+    }
+    .off-code-text {
+        font-size: 1.5rem !important;
+    }
+
+    .get-services-btn {
+        width: 100% !important;
+    }
+ 
+    .main-container {
+        padding: 10px !important;
+    }
+
+    .record-order-title {
+        font-size: 1.3rem !important;
+    }
+    .record-order-select {
+        font-size: 1.3rem !important;
+    }
+
+    .order-select-title {
+        font-size: 1.5rem !important;
+        line-height: 3rem !important;
+    }
+    .record-order-form p {
+        font-size: 1.4rem !important;
+    }
+
+    .record-order-details-table {
+        font-size: 1.4rem !important;
+    }
+    .form-check-label{
+        font-size: 1.4rem !important;
+        line-height: 2rem !important;
+    }
+
+    .record-order-detail-box p{
+        font-size: 1.4rem !important;
+    }
+
+    .send-tiket-form-btn {
+        flex-direction: column;
+    }
+    #send-tiket-btn, #upload-file-btn {
+        width: 100%;
+    }
+    .error-logo {
+        max-width: 200px !important;
+    }
+    
+}
+@media screen and (max-width: 360px){
+    .footer-contactus{ 
+        width: auto !important;
+        margin-bottom: 5rem !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

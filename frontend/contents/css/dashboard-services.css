@@ -1,0 +1,62 @@
+
+.services {
+    margin-top: 5rem;
+}
+
+.services-info-title {
+    font-size: 2.5rem;
+    color: #ddddde;
+}
+.services-info-caption {
+    color: #9e9ea2;
+    line-height: 3rem;
+    
+}
+.get-services-btn {
+    color: var(--white);
+    background-color: #1f94ce;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 30rem;
+}
+
+.services-banner-wrap {
+    background-color: #34343e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    border-radius: .5rem;
+    gap: 2rem;
+}
+.services-banner-wrap img {
+    width: 30rem;
+}
+.services-banner-wrap p {
+    color: #bebec1;
+    line-height: 3rem;
+}
+.show-all-services {
+    color: var(--white);
+    background-color: #1f94ce; 
+    width: 100%;
+    margin: 2rem auto;  
+}
+
+/* all service */
+
+.dashboard-service-table {
+    min-width: 110rem !important;
+}
+.dashboard-service-table tbody td {
+    font-size: 1.4rem;
+}
+.all-service-details-btn {
+    background-color: var(--red-50);
+    color: var(--white);
+}
+.services-table-status {
+    color: #7ccc77;
+}

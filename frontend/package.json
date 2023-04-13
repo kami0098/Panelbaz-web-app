@@ -1,0 +1,19 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "num2persian": "^3.2.2",
+    "persiandate": "^0.2.1",
+    "sweetalert2": "^11.7.1",
+    "validator": "^13.9.0"
+  }
+}

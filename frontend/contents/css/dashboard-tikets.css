@@ -1,0 +1,151 @@
+.dashboard-send-tiket {
+    margin-top: 5rem;
+}
+
+.send-tiket-from-wrap h2 {
+    color: #ddddde;
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+
+.send-tiket-from-wrap h4 {
+    color: #9e9ea2;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+.send-tiket-from {
+    margin-top: 3.5rem;
+}
+
+.send-tiket-from input {
+    margin-top: 1rem;
+}
+
+.send-tiket-from textarea {
+    margin-top: 1.5rem;
+    resize: none;
+}
+
+.send-tiket-form-btn {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.send-tiket-form-btn button {
+    flex: 1;
+    padding: 2rem 0;
+    color: var(--white);
+    background-color: #1f94ce;
+}
+
+#upload-file-btn {
+    /* background-color: #5facfa; */
+}
+
+.send-tiket-details {
+    background-color: #34343e;
+    border-radius: .5rem;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.send-tiket-details img {
+    width: 30rem;
+    margin: auto;
+}
+
+.send-tiket-details p {
+    color: #bebec1;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+}
+
+
+/* show tikets */
+
+.show-tikets-content-wrap {
+    position: relative;
+}
+
+
+.show-tikets-table {
+    width: 110rem;
+}
+
+.show-tiket-status-btn {
+    background-color: #1f94ce;
+    color: var(--white);
+}
+
+.open-new-tikets-circle-btn {
+    background-image: linear-gradient(20deg, #ac82a4, #be9db8);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -2rem;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.open-new-tikets-circle-btn svg {
+    fill: var(--white);
+    transition: all 200ms ease-in-out;
+}
+
+.open-new-tikets-circle-btn svg:hover {
+    fill: #34343e;
+}
+
+.show-tikets-content-btn {
+    background-color: #1f94ce;
+    color: var(--white);
+}
+
+
+#dashboard-order_id-tiket-input {
+    /* text-align: center; */
+}
+
+#dashboard-order_id-tiket-input::placeholder {
+    text-align: right;
+}
+
+
+/* custom input file */
+
+#upload-file-btn {
+    background-color: #5facfa;
+    color: var(--white);
+    border-radius: .5rem;
+    flex: 1;
+    cursor: pointer;
+}
+#upload-file-btn::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#upload-file-btn::before {
+    text-align: center;
+    content: 'بارگذاری فایل';
+    outline: none;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    color: var(--white);
+}
+
+

@@ -1,0 +1,109 @@
+
+.inventory-increase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ddddde;
+    gap: 1rem;
+}
+.inventory-increase-details p{
+    margin-top: 1.5rem;
+    line-height: 3rem;
+    width: 100%;
+}
+.inventory-available-count {
+
+}
+.inventory-minimum-withdrawal {
+
+}
+.inventory-maximum-withdrawal {
+
+}
+.inventory-increase-form {
+
+}
+.inventory-increase-form h3 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+#inventory-increase-input {
+    background-color: #34343e;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    width: 100%;
+    margin-left: 1rem;
+    color: #fff;
+}
+.off-code-text {
+    font-size: 1.7rem;
+    margin: 2rem 0;
+    line-height: 3rem;
+}
+.off-code-btn {
+    color: #f35353;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+.off-code-btn:hover {
+    color: #6dc151;
+}
+.off-code-wrapper {
+    margin: 3rem 0;
+    overflow: hidden;
+    height: 0;    
+    transition: all 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.off-code-wrapper.active {
+    height: 5rem;
+}
+
+.off-code-wrapper input {
+    background-color: #34343e;
+    padding: .7rem;
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+}
+.off-code-wrapper button {
+    background-color: #7ccc77;
+    color: #fff;
+}
+.off-code-wrapper input::placeholder {
+    color: #7f8187;
+    font-weight: normal;
+}
+
+.payment-gateway-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #34343e;
+    padding: 2rem 0;
+    border-radius: .3rem;
+    border: 1px solid #9e9ea2;
+    margin-bottom: 1rem;
+}
+.payment-gateway-wrapper {
+    font-size: 1.4rem;
+}
+.zarinpal-payment-banner {
+    background-color: #283d71;
+    border-radius: .4rem;
+    padding: .3rem;
+}   
+.inventory-increase-btn {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #1f94ce;
+    color: #fff;
+}

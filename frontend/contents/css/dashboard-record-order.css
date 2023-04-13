@@ -1,0 +1,150 @@
+/* dashboard record order */
+
+.dashboard-record-orders {
+
+}
+
+
+.record-order-title {
+    color: #6dc151;
+    padding: 2rem 1rem;
+    background-color: #f8d7da;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+}
+
+.record-order-select {
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 1.5rem .5rem;
+    background-color: #34343e;
+    border: none;
+    color: #bebec1;
+}
+
+.order-select-title {
+    color: #ddddde;
+    font-size: 1.7rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.record-order-form {
+    transition: all 200ms ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+.record-order-form.active {
+    height: 22rem;
+    overflow: visible;
+}
+.record-order-form p {
+    color: #ddddde;
+    margin: 1rem 0;
+}
+.record-order-count-input {
+    background-color: #8a8a8f !important; 
+    padding: 1rem !important;
+}
+
+.record-order-details-table-wrapper {
+    overflow: auto;
+    display: none;
+}
+.record-order-details-table-wrapper.active {
+    display: block;
+}
+.record-order-details-table {
+    background-color: #34343e;
+    margin-top: 5rem;
+    border-radius: .5rem;
+    color: #ddddde;
+    font-size: 1.5rem;
+    min-width: 50rem;
+}
+.record-order-details-table > div:nth-child(2n+2){
+    background-color: #292a32;
+}
+.record-order-details-table > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #282831;
+}
+.record-order-decrease-wallet-txt p{
+    color: #ff8181;
+}
+.record-order-payment-wallet-txt p {
+    color: #7ccc77;
+}
+
+.record-order-input-checkbox {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    gap: .7rem;
+    padding-top: 2rem;
+}
+.record-order-input-checkbox input{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.record-order-input-checkbox:checked {
+    background-color: red !important;
+}
+.record-order-input-checkbox label{
+    color: var(--white);
+}
+
+.order-count-label-show-inventory {
+    font-size: 1.2rem;
+}
+.record-order-dont-inventory {
+    color: #e94242;
+    text-align: center;
+    margin-top: 5rem;
+    display: none;
+}
+.record-order-dont-inventory.active {
+    display: block;
+}
+.record-order-submit-btn {
+    width: 100%;
+    padding: 1.8rem 0;
+    background-color: #7ccc77;
+    color: var(--white);
+    transition: all 200ms ease-in-out;
+}
+.record-order-submit-btn:hover {
+    background-color: #63c25d;
+}
+
+
+
+/* --- */
+.record-order-detail-box {
+    background-color: #34343e;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.record-order-detail-box h3 {
+    font-size: 2.3rem;
+    color: #ddddde;
+}
+.record-order-detail-box p {
+    color: #bebec1;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    line-height: 3rem;
+}
+
+
+
